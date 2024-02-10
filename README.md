@@ -32,7 +32,7 @@ mysql -h localhost -u root -p <requetes.sql;
     -- Dictionnaire des données : 
 
 ##### Horaire ####
-|-----------------|--------------------|
+
 | Field           | Type               | 
 |-----------------|--------------------|
 | id_horaire      | INT  auto_increment|
@@ -40,31 +40,30 @@ mysql -h localhost -u root -p <requetes.sql;
 | id_ligne        | INT                | 
 | id_station      | INT                | 
 | id_jour         | INT                | 
-|-----------------|--------------------|
+
 
 #### Jour ####
-|----------|---------------------|
+
 | Field    | Type                | 
 |----------|---------------------|
 | id_jour  | INT auto_increment  | 
 | nom_jour | VARCHAR(32)         | 
-|----------|---------------------|
+
 
 #### Ligne ####
-|--------------|----------------------|
+
 | Field        | Type                 | 
 |--------------|----------------------|
 | id_ligne     | INT auto_increment   |
 | numero_ligne | INT                  |
-|--------------|----------------------|
+
 
 #### Station ####
-|-------------|--------------------|
+
 | Field       | Type               | 
 |-------------|--------------------|
 | id_station  | INT auto_increment |
 | nom_station | VARCHAR(32)        |  
-|-------------|--------------------|
 
 
 
