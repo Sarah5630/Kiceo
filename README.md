@@ -31,40 +31,41 @@ mysql -h localhost -u root -p <requetes.sql;
 
     -- Dictionnaire des données : 
 
-mysql> describe Horaire;
-+-----------------+------+------+-----+---------+----------------+
-| Field           | Type | Null | Key | Default | Extra          |
-+-----------------+------+------+-----+---------+----------------+
-| id_horaire      | int  | NO   | PRI | NULL    | auto_increment |
-| horaire_passage | time | YES  |     | NULL    |                |
-| id_ligne        | int  | NO   | MUL | NULL    |                |
-| id_station      | int  | NO   | MUL | NULL    |                |
-| id_jour         | int  | NO   | MUL | NULL    |                |
-+-----------------+------+------+-----+---------+----------------+
+##### Horaire ####
+|-----------------|--------------------|
+| Field           | Type               | 
+|-----------------|--------------------|
+| id_horaire      | INT  auto_increment|
+| horaire_passage | TIME               |
+| id_ligne        | INT                | 
+| id_station      | INT                | 
+| id_jour         | INT                | 
+|-----------------|--------------------|
 
-mysql> describe Jour;
-+----------+-------------+------+-----+---------+----------------+
-| Field    | Type        | Null | Key | Default | Extra          |
-+----------+-------------+------+-----+---------+----------------+
-| id_jour  | int         | NO   | PRI | NULL    | auto_increment |
-| nom_jour | varchar(32) | YES  |     | NULL    |                |
-+----------+-------------+------+-----+---------+----------------+
+#### Jour ####
+|----------|---------------------|
+| Field    | Type                | 
+|----------|---------------------|
+| id_jour  | INT auto_increment  | 
+| nom_jour | VARCHAR(32)         | 
+|----------|---------------------|
 
-mysql> describe Ligne;
-+--------------+------+------+-----+---------+----------------+
-| Field        | Type | Null | Key | Default | Extra          |
-+--------------+------+------+-----+---------+----------------+
-| id_ligne     | int  | NO   | PRI | NULL    | auto_increment |
-| numero_ligne | int  | YES  |     | NULL    |                |
-+--------------+------+------+-----+---------+----------------+
+#### Ligne ####
+|--------------|----------------------|
+| Field        | Type                 | 
+|--------------|----------------------|
+| id_ligne     | INT auto_increment   |
+| numero_ligne | INT                  |
+|--------------|----------------------|
 
-mysql> describe Station;
-+-------------+-------------+------+-----+---------+----------------+
-| Field       | Type        | Null | Key | Default | Extra          |
-+-------------+-------------+------+-----+---------+----------------+
-| id_station  | int         | NO   | PRI | NULL    | auto_increment |
-| nom_station | varchar(32) | YES  |     | NULL    |                |
-+-------------+-------------+------+-----+---------+----------------+
+#### Station ####
+|-------------|--------------------|
+| Field       | Type               | 
+|-------------|--------------------|
+| id_station  | INT auto_increment |
+| nom_station | VARCHAR(32)        |  
+|-------------|--------------------|
+
 
 
 ## 3. Références
