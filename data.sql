@@ -1,8 +1,6 @@
 Use kiceo;
 
 
---reset des Tables 
-
 DELETE FROM Horaire;
 DELETE FROM stationsDesservies;
 DELETE FROM joursCirculation;
